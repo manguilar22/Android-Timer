@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">Reloj de Manuel Aguilar</string>
+        <string name="my_timer">Mi Reloj....</string>
+        <string name="start_button">Comienzo</string>
+        <string name="stop_button">Detener</string>
+
+</resources>
