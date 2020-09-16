@@ -1,11 +1,16 @@
 package edu.utep.cs4330.timer;
 
+import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class TimerModel implements Runnable  {
+public class TimerModel extends AppCompatActivity implements Runnable  {
     private final AtomicBoolean running = new AtomicBoolean(false); // Feature Flag: START and STOP thread
     private Thread worker;
     private long startTime;
@@ -18,6 +23,7 @@ public class TimerModel implements Runnable  {
     public TimerModel(TextView textView){
         this.textView = textView;
     }
+
 
     public void start(){
         worker = new Thread(this);
